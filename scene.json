@@ -5,7 +5,7 @@
   "ecs7": true,
   "runtimeVersion": "7",
   "display": {
-    "title": "DusNufus -- landing area",
+    "title": "DusNufus -- click test A",
     "description": "home to all testing for projects in DCL",
     "navmapThumbnail": "images/scene-thumbnail.png",
     "favicon": "favicon_asset"
@@ -18,8 +18,8 @@
   "main": "bin/index.js",
   "tags": [],
   "scene": {
-    "parcels": ["1,0"],
-    "base": "1,0"
+    "parcels": ["0,0"],
+    "base": "0,0"
   },
   "spawnPoints": [
     {
@@ -45,6 +45,6 @@
     "ALLOW_TO_MOVE_PLAYER_INSIDE_SCENE",
     "ALLOW_TO_TRIGGER_AVATAR_EMOTE"
   ],
-  "logsPermissions": ["0xYourWalletAddress"],
+  "logsPermissions": ["0x61afc36b10a8a2f113dE1095f7eA801a9567D528"],
   "authoritativeMultiplayer": true
 }
