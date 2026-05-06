@@ -6,7 +6,8 @@ import {
   TextShape,
   pointerEventsSystem,
   InputAction,
-  Schemas
+  Schemas, 
+  GltfContainer
 } from '@dcl/sdk/ecs'
 import { Vector3 } from '@dcl/sdk/math'
 import { isServer, syncEntity, registerMessages } from '@dcl/sdk/network'
@@ -64,6 +65,14 @@ function runClient() {
     text: 'Clicks: 0',
     fontSize: 10
   }) */
+
+  let ground = engine.addEntity()
+  GltfContainer.create(ground, {
+      src: 'models/edgeGlow_blue_1x1.gltf'
+  })
+  Transform.create(ground, {
+      position: Vector3.create(8,0,8)
+  })
 
   const button = engine.addEntity()
   Transform.create(button, { position: Vector3.create(8, 1, 8) })
